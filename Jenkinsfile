@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage ('test') {
 			steps {
-				hello ('Lakshmi');
+				helloextern ('name: Lakshmi');
 			}
 		}
 	}
