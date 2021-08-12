@@ -1,4 +1,4 @@
-def call (Map config = [:]) {
-	load {name: 'hellotest.sh'}
-	sh "./hellotest.sh ${config.name}"
+def call (name) {
+	load ('hellotest.sh')
+	sh "./hellotest.sh ${name}"
 }
