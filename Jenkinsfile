@@ -1,6 +1,6 @@
 @Library ('sharedlib_test') _
 pipeline {
-	agent any
+	agent { label 'linux' }
 	stages {
 		stage ('test') {
 			steps {
